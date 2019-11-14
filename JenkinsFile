@@ -27,6 +27,13 @@ pipeline
               }
             }
           }
+          stage('issue tracker')
+    {
+        steps
+        {
+        jiraSendBuildInfo branch: '', site: 'https://vijaysh.atlassian.net/'
+        }
+        }
        stage('Nexus')
     {
      steps{
