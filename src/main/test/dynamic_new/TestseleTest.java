@@ -47,7 +47,6 @@ public class TestseleTest {
       dropdown.findElement(By.xpath("//option[. = 'Dollar']")).click();
     }
     driver.findElement(By.name("Currency")).click();
-    driver.findElement(By.name("num")).click();
     driver.findElement(By.name("num")).sendKeys("10");
     driver.findElement(By.name("bookButton")).click();
     driver.findElement(By.name("Currency")).click();
