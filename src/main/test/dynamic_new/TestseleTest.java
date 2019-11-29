@@ -37,7 +37,8 @@ public class TestseleTest {
     driver.quit();
   }
   @Test
-  public void testsele() {
+  public void testsele() 
+  {
     driver.get("http://13.233.200.105:8090/deploy/");
     driver.manage().window().setSize(new Dimension(707, 475));
     driver.findElement(By.name("Currency")).click();
@@ -63,4 +64,5 @@ public class TestseleTest {
     driver.findElement(By.name("Currency")).click();
     driver.findElement(By.name("bookButton")).click();
   }
+  
 }
