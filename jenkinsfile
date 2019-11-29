@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+ 
+    stages {
+
+      stage('clean')
+            {
+                steps
+                 { 
+                    sh 'mvn clean install'
+                 }
+            }
+    stage("deploy")
+    {
+        steps{
+            deploy adapters: [tomcat9(credentialsId: 'tocat',  url: 'http://13.127.196.221:8090')], contextPath: 'deploy', onFailure: false, war: '**/*.war'        
+            }
+    }
+}
+}
