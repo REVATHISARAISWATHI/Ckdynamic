@@ -18,18 +18,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.Keys;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 public class TestseleTest {
   private WebDriver driver;
-  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver.exe");
   private Map<String, Object> vars;
   JavascriptExecutor js;
   @Before
   public void setUp() {
     driver = new ChromeDriver();
+    System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver.exe");
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
   }
