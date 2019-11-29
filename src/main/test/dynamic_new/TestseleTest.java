@@ -24,7 +24,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 public class TestseleTest {
   private WebDriver driver;
-  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver.exe");
   private Map<String, Object> vars;
   JavascriptExecutor js;
   @Before
