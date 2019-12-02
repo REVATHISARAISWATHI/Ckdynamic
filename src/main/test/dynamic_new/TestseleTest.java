@@ -31,16 +31,12 @@ public class TestseleTest {
    driver.manage().window().maximize();
 		Thread.sleep(2000);
 			
-    driver.findElement(By.name("Currency")).click();
-    {
+   
       WebElement dropdown = driver.findElement(By.name("Currency"));
       dropdown.findElement(By.xpath("//option[. = 'Dollar']")).click();
-    }
-    driver.findElement(By.name("Currency")).click();
- 
     driver.findElement(By.name("num")).sendKeys("10");
     driver.findElement(By.name("bookButton")).click();
-    driver.findElement(By.cssSelector("input:nth-child(2)")).click();
+   /* driver.findElement(By.cssSelector("input:nth-child(2)")).click();
     driver.findElement(By.name("Currency")).click();
     {
       WebElement dropdown = driver.findElement(By.name("Currency"));
@@ -60,7 +56,7 @@ public class TestseleTest {
     driver.findElement(By.name("num")).sendKeys("10");
     driver.findElement(By.name("bookButton")).click();
     driver.close();
-  }
+  } */
 
 		String h= driver.getTitle();
 		String e= "Currency Convertor";
