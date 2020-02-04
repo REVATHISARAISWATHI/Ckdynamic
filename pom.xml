@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Codekillers</groupId>
   <artifactId>dynamic_new</artifactId>
-  <version>${BUILD_NUMBER}</version>
+  <version>1.0</version>
   <packaging>war</packaging>
 	
 	<profiles>
