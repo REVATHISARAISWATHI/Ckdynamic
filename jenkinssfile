@@ -8,7 +8,7 @@ pipeline
 
     
    stages{
-    /*stage('Build')
+    stage('Build')
         {
             steps{
               sh 'mvn clean install'
@@ -22,7 +22,7 @@ pipeline
             sh   'curl -F file=@target/dynamic_new-1.0.war -u admin:admin123 http://3.15.18.214:8081/nexus/content/repositories/repo/Codekillers/dynamic_new/1.0/dynamic_new-1.0.war'
           }   
         
-        }*/
+        }
     stage('nexus')
      {
      steps{
